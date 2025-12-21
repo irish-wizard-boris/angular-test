@@ -1,0 +1,16 @@
+<html ng-app="Module1Solution">
+<head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Module 1 Solution</title>    
+</head>
+<body>
+    <h1>Welcome to Module 1 Solution</h1>
+    <p>This is the solution page for Module 1.</p>
+    <div ng-controller="MainController">
+        <input type="text" ng-model="lunchItems">
+        <button ng-click="checkLunchItems()">Submit</button>
+        <p>{{lunchMessage}}</p>
+    </div>
+</body>
+</html>
