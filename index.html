@@ -1,9 +1,15 @@
-<html>
+<html ng-app="appCalculator">
 <head>
     <title>Sample AngularJS Page</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
 </head>
-<body>
-    <h1>Welcome to My Sample Page 2</h1>
+<body >
+    <h1>Welcome to My Sample Page</h1>
     <p>This is a simple HTML page.</p>
+    <div ng-controller="MainController">
+        <input type="text" ng-model="name" ng-keyup="displayNumeric();" />
+        <p>Total value is: {{totalValue}} {{name}}</p>
+    </div>
 </body> 
 </html>
